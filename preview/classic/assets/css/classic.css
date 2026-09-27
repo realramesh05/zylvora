@@ -1,0 +1,95 @@
+/* ==============================================================================
+   Zylvora Technologies - Corporate Classic Theme (Version 2)
+   Executive Navy, Sapphire Blue, Warm Amber Gold & Crisp Light Aesthetics
+   ============================================================================== */
+
+:root {
+    --color-bg-base: #f8fafc;
+    --color-bg-card: #ffffff;
+    --color-primary: #0f172a;
+    --color-accent-blue: #2563eb;
+    --color-accent-gold: #d97706;
+    --color-text-main: #0f172a;
+    --color-text-muted: #475569;
+}
+
+body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Corporate Glass Elements */
+.corporate-nav {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.corporate-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.corporate-card:hover {
+    border-color: #93c5fd;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.08), 0 8px 10px -6px rgba(37, 99, 235, 0.04);
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.group:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    height: 14px;
+    display: block;
+}
+
+/* Corporate Grid Pattern */
+.corporate-pattern {
+    background-image: 
+        linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.radial-blue-glow {
+    background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.08) 0%, rgba(217, 119, 6, 0.03) 50%, transparent 80%);
+}
